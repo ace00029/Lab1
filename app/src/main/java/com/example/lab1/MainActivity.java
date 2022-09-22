@@ -2,12 +2,14 @@ package com.example.lab1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +22,11 @@ public class MainActivity extends AppCompatActivity {
     {
         TextView tv = (TextView)findViewById(R.id.mainText);
         tv.setText("Welcome to android");
+    }
+
+    public void changeColor(View v)
+    {
+        TextView tv = (TextView)findViewById(R.id.mainText);
+        tv.setTextColor(Color.RED);
     }
 }
