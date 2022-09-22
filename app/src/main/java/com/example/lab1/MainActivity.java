@@ -16,4 +16,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void changeText(View v)
+    {
+        TextView tv = (TextView)findViewById(R.id.mainText);
+        tv.setText("Welcome to android");
+    }
 }
